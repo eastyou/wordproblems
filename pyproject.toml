@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wordproblems"
+version = "0.1.0"
+description = "小学应用题自动生成器：一步题、两步题、可打印练习纸与答案校验"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = ["数学", "应用题", "小学", "练习纸", "题目生成", "cli"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Environment :: Console",
+  "Natural Language :: Chinese (Simplified)",
+]
+
+[project.scripts]
+wordproblems = "wordproblems.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/eastyou/wordproblems"
+Source = "https://github.com/eastyou/wordproblems"
+
+[tool.setuptools]
+packages = ["wordproblems"]
